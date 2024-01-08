@@ -1,0 +1,65 @@
+Enunciados
+
+1.Sistema de Reserva de Asientos para Cine 
+   - Descripción: Crear un sistema de consola para reservar asientos en una sala de cine. El programa debe mostrar una matriz que represente los asientos (libres y ocupados) y permitir al usuario seleccionar asientos para reservarlos.
+   - Retos: Manejar correctamente la entrada del usuario, actualizar y mostrar el estado actual de los asientos, y gestionar situaciones como asientos ya reservados o entradas inválidas.
+
+2.Simulador de Cajero Automático 
+   - Descripción: Desarrollar un simulador de cajero automático que permita retirar dinero, depositar y consultar saldo. El programa debe manejar cuentas múltiples con ID y contraseña.
+   - Retos: Crear un sistema de autenticación, manejar el saldo de las cuentas, y realizar operaciones básicas de un cajero automático.
+
+3.Analizador de Texto 
+   - Descripción: Implementar un programa que analice un texto ingresado por el usuario o leído de un archivo. Debe proporcionar estadísticas como el número de palabras, frecuencia de cada palabra, longitud promedio de las palabras, etc.
+   - Retos: Procesamiento de texto, manejo de archivos, y cálculo de estadísticas relevantes.
+
+ESTOS DOS SON MUY DUROS
+
+4.Generador de Horarios Escolares 
+   - Descripción: Crear un programa que genere horarios para una escuela. El usuario debe ingresar el número de clases, profesores y aulas disponibles, y el programa debe crear un horario que no tenga conflictos.
+   - Retos: Implementar un algoritmo que resuelva el problema de asignación de recursos sin conflictos.
+
+5.Sistema de Gestión de Biblioteca
+   - Descripción: Desarrollar un sistema para gestionar libros en una biblioteca. Debe permitir agregar, eliminar, buscar y prestar libros, además de llevar un registro de los libros prestados y disponibles.
+   - Retos: Manejar una colección de objetos (libros), realizar búsquedas eficientes, y gestionar el estado de los libros (prestados o disponibles).
+
+Programación pautada
+1.Sistema de Reserva de Asientos para Cine
+   -Pasos:
+     1. Crea una matriz para representar los asientos del cine (por ejemplo, `char[][] asientos`).
+     2. Inicializa todos los asientos como libres (por ejemplo, usando el carácter 'L').
+     3. Muestra la matriz de asientos en la consola.
+     4. Pide al usuario que ingrese el número de fila y columna para seleccionar un asiento.
+     5. Verifica si el asiento está libre. Si lo está, márcalo como ocupado (por ejemplo, con 'O'). Si no, muestra un mensaje de error.
+     6. Repite los pasos 3 a 5 hasta que el usuario decida salir.
+
+2.Simulador de Cajero Automático
+   -Pasos:
+     1. Crea estructuras para almacenar la información de las cuentas (por ejemplo, usando arrays para IDs, contraseñas y saldos).
+     2. Implementa un sistema de login que pida al usuario su ID y contraseña y verifique estos datos.
+     3. Una vez autenticado, muestra un menú con opciones como retirar, depositar y ver saldo.
+     4. Para cada opción, realiza las operaciones correspondientes (actualizar saldo, mostrar información, etc.).
+     5. Asegúrate de validar las entradas del usuario (por ejemplo, no permitir retirar más dinero del disponible en la cuenta).
+
+3.Analizador de Texto
+   -Pasos:
+     1. Pide al usuario un texto o el nombre de un archivo de texto para analizar.
+     2. Lee el texto y divídelo en palabras.
+     3. Para cada palabra, actualiza las estadísticas: cuenta el número total de palabras, la frecuencia de cada palabra, la longitud promedio, etc.
+     4. Al final, muestra todas las estadísticas calculadas.
+     5. Considera casos especiales como signos de puntuación o palabras repetidas.
+
+4.Generador de Horarios Escolares
+   -Pasos:
+     1. Pide al usuario el número de clases, profesores y aulas disponibles.
+     2. Crea una estructura para representar los horarios (por ejemplo, una matriz con días y horas).
+     3. Utiliza un algoritmo para asignar clases a aulas y profesores sin causar conflictos de horario.
+     4. Ten en cuenta la disponibilidad de profesores y aulas en cada hora.
+     5. Muestra el horario final, asegurándote de que no haya solapamientos.
+
+5.Sistema de Gestión de Biblioteca
+   -Pasos:
+     1. Crea estructuras para almacenar información sobre los libros (título, autor, estado del libro, etc.).
+     2. Implementa funciones para agregar, eliminar, buscar y prestar libros.
+     3. Cuando un libro se presta, actualiza su estado a "prestado" y registra a quién se le prestó.
+     4. Permite la devolución de libros, actualizando su estado a "disponible".
+     5. Proporciona una opción para ver todos los libros disponibles o prestados.
